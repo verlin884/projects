@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row button_container border-bottom mb-20">
+                <div class="col path_btn">
+                    <a href="/index.html" id="terminal1" class="btn">Terminal 1</a>
+                    <a href="#" id="terminal1" class="btn text-secondary active">Terminal 2</a>
+                    <button id="both" class="btn text-secondary">Both</button>
+                </div>
+            </div>
+            <div class="terminal2">
+                <div class="container total_collection_container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <section class="total_collection_graf border shadow rounded ">
+                                <div class="status_heading_container">
+                                    <h2 class="title-table">Total Collection</h2>
+                                    <button class="btn"><img src="assets/images/dots.svg" alt=""></button>
+                                </div>
+                                <div class="chart_container">
+                                    <div id="total_graf"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-sm-4">
+                            <section class="total_collection_pie border shadow rounded ">
+                                <div class="status_heading_pie">
+                                    <h2 class="title-table">Total Collection</h2>
+                                    <h3 class="rm_subtitle"><small>RM</small>14,094</h3>
+                                </div>
+                                <div class="chart_container">
+                                    <div id="total_pie"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="container permists_container">
+                    <div class="row">
+                        <div class="col cp_container">
+                            <section class="border shadow rounded ">
+                                <div class="status_heading_container">
+                                    <h2 class="title-table">Total Collection <small class="terminal purple">Terminal
+                                            1</small></h2>
+                                    <button class="btn"><img src="assets/images/dots.svg" alt=""></button>
+                                </div>
+                                <div class="card_cp_container">
+                                    <div class="card_cp">
+                                        <p>CP1</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp">
+                                        <p>CP2</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp">
+                                        <p>CP3</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp">
+                                        <p>CP5</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp">
+                                        <p>FCZ</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col cp_container">
+                            <section class="border shadow rounded ">
+                                <div class="status_heading_container">
+                                    <h2 class="title-table">Total Collection <small class="terminal yellow">Terminal
+                                            2</small></h2>
+                                    <button class="btn"><img src="assets/images/dots.svg" alt=""></button>
+                                </div>
+                                <div class="card_cp_container">
+                                    <div class="card_cp">
+                                        <p>CP2</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp">
+                                        <p>CP6</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp">
+                                        <p>FCZ</p>
+                                        <p class="rm">RM0.00</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col cp_container">
+                            <section class="border shadow rounded ">
+                                <div class="status_heading_container">
+                                    <h2 class="title-table">Permits Collection </h2>
+                                </div>
+                                <div class="card_cp_container">
+                                    <div class="card_cp blue border-0">
+                                        <p>Daily pass</p>
+                                        <p class="terminal rm bg-primary border-0">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp orange border-0">
+                                        <p>Permanent pass</p>
+                                        <p class="terminal rm bg-warning border-0">RM0.00</p>
+                                    </div>
+                                    <div class="card_cp red border-0">
+                                        <p>Foreigner pass</p>
+                                        <p class="terminal rm bg-danger border-0">RM0.00</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

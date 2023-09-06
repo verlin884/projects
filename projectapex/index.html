@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row button_container border-bottom mb-20">
+                <div class="col path_btn">
+                    <a href="#" id="terminal1" class="btn active">Terminal 1</a>
+                    <a href="/page2.html" id="terminal1" class="btn text-secondary ">Terminal 2</a>
+                    <button id="both" class="btn text-secondary">Both</button>
+                </div>
+            </div>
+            <div class="terminal1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="cards_container_approval">
+                                <div class="card green">
+                                    <img src="assets/images/permit1.svg" alt="Applied permits">
+                                    <div class="card-body">
+                                        <h1 class="card-title">59</h1>
+                                        <p class="card-text">Applied permits</p>
+                                    </div>
+                                </div>
+                                <div class="card orange">
+                                    <img src="assets/images/permit2.svg" alt="Waiting approval">
+                                    <div class="card-body">
+                                        <h1 class="card-title">6</h1>
+                                        <p class="card-text">Waiting approval</p>
+                                    </div>
+                                </div>
+                                <div class="card blue">
+                                    <img src="assets/images/permit3.svg" alt="Renewal approval">
+                                    <div class="card-body">
+                                        <h1 class="card-title">59</h1>
+                                        <p class="card-text">Renewal approval</p>
+                                    </div>
+                                </div>
+                                <div class="card red">
+                                    <img src="assets/images/permit4.svg" alt="Expired permits">
+                                    <div class="card-body">
+                                        <h1 class="card-title">59</h1>
+                                        <p class="card-text">Expired permits</p>
+                                    </div>
+                                </div>
+                                <div class="card purple-light">
+                                    <img src="assets/images/permit5.svg" alt="Rejected permits">
+                                    <div class="card-body">
+                                        <h1 class="card-title">6</h1>
+                                        <p class="card-text">Rejected permits</p>
+                                    </div>
+                                </div>
+                                <div class="card navy">
+                                    <img src="assets/images/permit6.svg" alt="Total approval">
+                                    <div class="card-body">
+                                        <h1 class="card-title">59</h1>
+                                        <p class="card-text">Total approval</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="chart_status_container border rounded shadow">
+                                <h2 class="title-table text-center">Work Permit by Status</h2>
+                                <div id="permit_status"></div>
+                                <a href="#" class="btn text-center view_more text-light"> View More</a>
+                            </section>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="container">
+                                <div class="row ">
+                                    <section class="border shadow rounded table_permit">
+                                        <h2 class="title-table">
+                                            Permit Types
+                                        </h2>
+                                        <table class="table table-striped table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <td scope="col">Permit no.</td>
+                                                    <td scope="col">Requested by</td>
+                                                    <td scope="col">Date</td>
+                                                    <td scope="col">Review</td>
+                                                    <td scope="col">Approved</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>wp2018_1014</td>
+                                                    <td>Servo Security</td>
+                                                    <td>20/10/2023</td>
+                                                    <td>
+                                                        <p class="text-danger red border-0 text-center pd-5 br-5">
+                                                            Reject</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-danger red border-0 text-center pd-5 br-5">Reject
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>wp2018_1014</td>
+                                                    <td>Servo Security</td>
+                                                    <td>20/10/2023</td>
+                                                    <td>
+                                                        <p class="text-success green border-0 text-center pd-5 br-5">
+                                                            Approved
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-success green border-0 text-center pd-5 br-5">
+                                                            Approved
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>
+
+                                    <section class="border shadow rounded chart_permit">
+                                        <h2 class="title-table">
+                                            Permit Types
+                                        </h2>
+                                        <div class="chart_container">
+                                            <div id="permit_chart"></div>
+                                        </div>
+                                    </section>
+
+                                    <section class="border rounded shadow status_overview_container">
+                                        <div class="status_heading_container">
+                                            <h2 class="title-table">Status Overview</h2>
+                                            <div class="calendar_container">
+                                                <p>Apr 2023</p>
+                                                <img src="assets/images/calendar.svg" alt="calendar">
+                                            </div>
+                                        </div>
+                                        <div class="chart_container">
+                                            <div id="overview_chart"></div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

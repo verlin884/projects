@@ -1,0 +1,294 @@
+body,
+main{
+    padding: 0;
+    margin: 0;
+}
+
+button, input, optgroup, select, textarea, p, h1,h2,h3,h4{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.pd-5{
+    padding: 5px;
+}
+
+.br-5{
+    border-radius: 5px;
+}
+
+.path_btn a{
+    border-radius: 0;
+}
+
+.path_btn a.active{
+    color: black !important;
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+
+.cards_container_approval {
+    display: grid;
+    grid-template-columns: repeat(2,  calc(50% - 10px));
+    justify-content: space-between;
+}
+
+.cards_container_approval .card{
+    padding: 20px;
+    border-radius: 12px;
+    margin: 0 0 20px 0;
+}
+
+.cards_container_approval .card-body {
+    margin: 0;
+    padding: 0;
+}
+
+.cards_container_approval .card img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 16px;
+}
+
+.cards_container_approval .card h1{
+    font-family: Lato;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.cards_container_approval .card p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.green{
+    border: 1px solid #47BE7D;
+    background-color: #E8FFF3;
+}
+
+.orange{
+    border: 1px solid #FAA61A;
+    background-color: #FEEDD1;
+}
+
+.blue{
+    border: 1px solid #0098F4;
+    background-color: #D3EAF9;
+}
+
+.red{
+    border: 1px solid #D9214E;
+    background-color: #FFF5F8;
+}
+
+.purple-light{
+    border: 1px solid #7239EA;
+    background-color: #F8F5FF;
+}
+
+.navy{
+    border: 1px solid #252C6D;
+    background-color: rgba(171, 174, 212, 0.50);
+}
+
+section.rounded{
+    padding: 30px;
+}
+
+.title-table{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.title-table small{
+    margin-left: 20px;
+}
+
+table td{
+    color: #A1A5B7;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+.apexcharts-legend-marker{    
+    height: 5px !important;
+    width: 20px !important;
+    margin-right: 10px !important;
+}
+
+#permit_status .apexcharts-legend-series{
+    width: 100%;
+}
+
+#permit_status .apexcharts-legend{
+    margin: 0 10px;
+}
+
+.view_more{
+    display: flex;
+    padding: 5px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 6px;
+    background-color: #252C6D;
+    margin: 50px 25px;
+}
+
+#overview_chart .apexcharts-legend-text{
+    color: #7E8299 !important;
+}
+
+.calendar_container{
+    background-color: #F1F1F2;
+    padding: 10px 22px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    width: max-content;
+    align-items: center;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.calendar_container p {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+    color: #7E8299;
+}
+
+.status_heading_container{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rm-fl{
+    padding: 5px 10px;
+    border-radius: 4px !important;
+}
+
+.grey{
+    color: #A1A5B7 !important;
+}
+
+.card_cp{
+    border-radius: 7px;
+    border: 1px solid #252C6D;
+    display: flex;
+    padding: 16px 14px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.card_cp:last-child(){
+    margin-bottom: 0;
+}
+
+.card_cp p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.card_cp p.rm{
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #252C6D;
+    padding: 7px;
+    font-weight: 700;
+}
+
+.terminal{
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.purple{
+    background-color: #252C6D;
+}
+
+.yellow{
+    background-color: #E9B500;
+}
+
+.rm_subtitle{
+    font-size: 34px;
+    font-weight: bold;
+    display: flex;
+    justify-items: flex-end;
+    margin-top: 24px;
+}
+
+.rm_subtitle small{
+    font-size: 20px;
+    color: #A1A5B7;
+}
+
+#total_pie .apexcharts-legend-text strong{
+    text-align: right;
+}
+
+#total_graf .apexcharts-legend{
+    margin-top: 30px;
+}
+
+#total_graf .apexcharts-legend-marker{
+    display: none !important;
+}
+
+.Hourly,
+.Planned,
+.Penalty{
+    border-radius: 7px;
+    display: flex;
+    padding: 16px 14px;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.Penalty{
+    background-color: #E8FFF3;
+}
+
+.Penalty small{
+    background-color: #47BE7D;
+}
+
+.Hourly{
+    background-color: #FFF8DD;
+}
+
+.Hourly small{
+    background-color: #E9B500;
+}
+
+.Planned{
+    background-color: #D3EAF9;
+}
+
+.Planned small{
+    background-color: #0078C1;
+}
+
+#total_graf .apexcharts-legend small{
+    padding: 7px;
+    border-radius: 4px;
+    color: white;
+    margin-left: 35px;
+}
